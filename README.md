@@ -1,2 +1,1 @@
-# foodatlasfinal
-repo for upload to Heroku
+# repo for upload to Heroku
