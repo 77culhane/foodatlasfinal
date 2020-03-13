@@ -1,4 +1,4 @@
-/* FORMATTING BODY AND HEADER TAGS */
+/* FORMATTING BODY AND h1 TAGS */
 body {
   background: whitesmoke;
 }
@@ -10,6 +10,10 @@ html {
   margin: 0;
 }
 
+.bgclass
+{
+  background-image: 'food_photos/splash.jpg';
+}
 
 .leaflet-popup-content {
   text-align: center;
@@ -125,21 +129,41 @@ p {
 }
 
 
-
-/*FORMATTING THE HEADER*/
-.header {
+.headerbackground {
   background-repeat: no-repeat;
   overflow:hidden;
   height: 370px;
-  padding: 55px;
+  padding: 35px;
   margin: 0;
-  background: #cdcdcd;
   width: 100%;
-  background-image:
-  linear-gradient(to bottom, rgba(8, 8, 8, 0.5), rgba(8, 8, 8, 0.5)),
-  url('https://bartaco.com/media/Bartaco_819-1400x500.jpg');
+  background-image: url('food_photos/splash.jpg');
+  background-size: 100% 100%;
+  opacity: 0.8;
+  color: whitesmoke;
+  z-index: -1;
 }
 
+.ed{
+  opacity: 1;
+  color: white;
+  text-shadow: 4px 4px 4px rgb(36, 19, 1);
+}
+
+/*FORMATTING THE HEADER*/
+.header {
+  overflow:hidden;
+  height: 370px;
+  padding: 35px;
+  margin: 0;
+  width: 100%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+ }
 
 
 /*FORMATTING THE PRINT BUTTON BACKGROUND*/
@@ -193,14 +217,19 @@ margin-bottom: 15px;
 
 /*FORMATTING THE HEADING (ICONS)*/
 .service-heading {
+  /* margin-top: 9px; */
   margin: 15px 0;
   text-transform: none;
-  color: whitesmoke;
+  color: darkslategray;
+}
+
+#Linear {
+  padding-top:10px;
 }
 
 /*FORMATTING THE TEXT (NAVIGATE)*/
 .text {
-  color: whitesmoke;
+  color: darkslategray;
 }
 
 
@@ -234,10 +263,10 @@ margin-bottom: 15px;
 
 /*FORMATTING THE ID'S*/
   #things {
-    background-color: rgb(188, 127, 245);
+    background-color: rgb(243, 208, 144);
     padding-top: 60px;
     padding-bottom: 60px;
-    color: whitesmoke
+    color: darkslategray
 }
 
 
@@ -327,3 +356,4 @@ margin-bottom: 15px;
   background-color: cornflowerblue;
 
 }
+
