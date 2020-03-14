@@ -76,6 +76,7 @@ list_PCT_LACCESS_BLACK15 = []
 list_PCT_NHBLACK10 = []
 list_PCT_NSLP09 = []
 list_POVRATE15 = []
+list_County = df['County'].values.tolist()
 lists = [list_PCT_OBESE_ADULTS08, list_CHILDPOVRATE15, list_FOODINSEC_13_15, list_MEDHHINC15, list_PC_FSRSALES07, list_PC_SNAPBEN10, list_PCT_DIABETES_ADULTS08, list_PCT_FREE_LUNCH09, list_PCT_LACCESS_BLACK15, list_PCT_NHBLACK10, list_PCT_NSLP09, list_POVRATE15]
 counter = 0
 for i in columnnames:
