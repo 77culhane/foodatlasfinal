@@ -12,7 +12,7 @@ html {
 
 .bgclass
 {
-  background-image: "images/splash.apg";
+  background-image: "{{ url_for('static', filename='images/splash.jpg') }}";
 }
 
 .leaflet-popup-content {
