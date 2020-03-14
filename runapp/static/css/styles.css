@@ -12,7 +12,7 @@ html {
 
 .bgclass
 {
-  background-image: src="{{ url_for('static', filename='images/splash.apg') }}";
+  background-image: "images/splash.apg";
 }
 
 .leaflet-popup-content {
@@ -136,7 +136,7 @@ p {
   padding: 35px;
   margin: 0;
   width: 100%;
-  background-image: url('food_photos/splash.jpg');
+  background-image: url('images/splash.jpg');
   background-size: 100% 100%;
   opacity: 0.8;
   color: whitesmoke;
