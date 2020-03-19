@@ -24,13 +24,16 @@ import pymysql
 import pandas as pd
 
 # Import your config
-#from config import remote_db_endpoint, remote_db_port, remote_gwsis_dbname, remote_gwsis_dbuser, remote_gwsis_dbpwd
-remote_db_endpoint = os.environ.get('remote_db_endpoint')
-remote_db_port = os.environ.get('remote_db_port')
-remote_gwsis_dbname = os.environ.get('remote_gwsis_dbname')
-remote_gwsis_dbuser = os.environ.get('remote_gwsis_dbuser')
-remote_gwsis_dbpwd = os.environ.get('remote_gwsis_dbpwd')
-
+serverstatus = 'local'
+serverstatus = os.environ.get('serverstatus')
+if serverstatus == 'online':
+    remote_db_endpoint = os.environ.get('remote_db_endpoint')
+    remote_db_port = os.environ.get('remote_db_port')
+    remote_gwsis_dbname = os.environ.get('remote_gwsis_dbname')
+    remote_gwsis_dbuser = os.environ.get('remote_gwsis_dbuser')
+    remote_gwsis_dbpwd = os.environ.get('remote_gwsis_dbpwd')
+else:
+    from config import remote_db_endpoint, remote_db_port, remote_gwsis_dbname, remote_gwsis_dbuser, remote_gwsis_dbpwd
 
 # Configure MySQL connection and connect 
 pymysql.install_as_MySQLdb()
